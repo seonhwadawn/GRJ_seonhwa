@@ -11,6 +11,9 @@ header {
 	font-family: "Roboto Slab", serif;
 	font-size: 30px;
 }
+body{
+	font-family: "Noto Serif KR", serif;
+}
 main {
 	display: flex;
 	font-family: "Noto Serif KR", serif;
@@ -23,6 +26,19 @@ main {
 	width: 150px;
 	padding: 10px;
 	border: 3px solid orange;
+}
+.button__add{
+	padding: 5px 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	background-color: tomato;
+	font-weight: bold;
+	color:white;
+}
+.button__add:hover{
+	background-color: teal;
+	color:white;
 }
 .flex__contianer {
 	display: flex;
@@ -53,6 +69,77 @@ main {
 	width: 100%;
 	height: 170px;
 	object-fit: cover;
+}
+.modal__container{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left: 0;
+	position: relative;
+}
+.modal__overlay{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.modal__form{
+	position: fixed;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+}
+.modal{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color:white;
+	padding:20px;
+	border-radius: 20px;
+}
+.modal__close{
+	position: absolute;
+	top:10px;
+	right:10px;
+	background: none;
+	border: none;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.modal__close:hover{
+	background-color:bisque;
+}
+.modal >input{
+	font-size: 18px;
+	border: 1px solid chocolate;
+	border-radius: 5px;
+	height: 30px;
+	margin: 10px;
+	padding-left: 5px;
+}
+.modal > input:focus{
+	border-color: cadetblue;
+}
+.modal > label{
+	font-weight: bold;
+}
+.button__submit{
+	background-color:tan;
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.hidden{
+	display: none;
 }
 
 /* 반응형? */

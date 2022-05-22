@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
         <link rel="stylesheet" href="./index.css">
+	
 	</head>
 	<body>
 		<header>
@@ -13,6 +14,7 @@
 		</header>
 		<main>
 			<div class="flex__sidebar">
+				<button class="button__add">추가</button>
 				<ul>
 					<li>은방울꽃</li>
 					<li>살구</li>
@@ -44,5 +46,24 @@
 				</div>
 			</section>
 		</main>
+		<div class="modal__container hidden">
+			<div class="modal__overlay"></div>
+			<div class="modal__form">
+				<form class="modal" id="addItem">
+					<button class="modal__close">X</button>	
+					<label for="name">이름</label>
+					<input type="text" id="name" placeholder="이름" required>
+					<label for="image">이미지</label>
+					<input type="text" id="image" placeholder="URL" required>
+					<label for="content">내용</label>
+					<input type="text" id="content" placeholder="나는 꽃이 좋아" required>
+					<button type="submit" class="button__submit">저장</button>
+				</form>
+				
+			</div>
+		</div>
 	</body>
+	<script src="./modal.js"></script>
+	<script src="./addCard.js"></script>
+	
 </html>
